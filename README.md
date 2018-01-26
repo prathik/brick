@@ -2,11 +2,11 @@
 
 Generates a brick based image.
 
-![Example file](images/output.png)
+![India flag](images/output.png)
 
 ## Original file
 
-![Original file](images/orig.png)
+![Original file](images/flag.png)
 
 # Installation
 
