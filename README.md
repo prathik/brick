@@ -2,6 +2,12 @@
 
 Generates a brick based image.
 
+![Example file](images/output.png)
+
+## Original file
+
+![Original file](images/orig.png)
+
 # Installation
 
 Run `git clone https://github.com/prathik/brick`.
