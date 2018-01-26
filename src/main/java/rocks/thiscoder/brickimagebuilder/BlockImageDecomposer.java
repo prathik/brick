@@ -7,11 +7,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class BlockImageDecomposer {
-    final BlockImage blockImage;
-    final Map<Integer, String> rgbImages;
+class BlockImageDecomposer {
+    private final BlockImage blockImage;
+    private final Map<Integer, String> rgbImages;
 
-    public BlockImageDecomposer(BlockImage blockImage, Map<Integer, String> rgbImages) {
+    BlockImageDecomposer(BlockImage blockImage, Map<Integer, String> rgbImages) {
         this.blockImage = blockImage;
         this.rgbImages = rgbImages;
     }

@@ -17,11 +17,11 @@ public class BrickImageController {
     private final Map<Integer, String> pixelToImage;
     private final String writeLocation;
 
-    public BrickImageController(BufferedImage image,
-                                int blockHeight,
-                                int blockWidth,
-                                Map<Integer, String> pixelToImage,
-                                String writeLocation) {
+    private BrickImageController(BufferedImage image,
+                                 int blockHeight,
+                                 int blockWidth,
+                                 Map<Integer, String> pixelToImage,
+                                 String writeLocation) {
         this.image = image;
         this.blockHeight = blockHeight;
         this.blockWidth = blockWidth;
@@ -29,7 +29,7 @@ public class BrickImageController {
         this.writeLocation = writeLocation;
     }
 
-    void generateBrickImage() throws IOException {
+    private void generateBrickImage() throws IOException {
         BlockImageBuilder blockImageBuilder = new BlockImageBuilder(image, blockHeight, blockWidth);
         BlockImage blockImage = blockImageBuilder.getBlockImage();
         BlockImageDecomposer blockImageDecomposer = new BlockImageDecomposer(blockImage, pixelToImage);
@@ -75,9 +75,7 @@ public class BrickImageController {
                     pixelToImage, oFile);
 
             brickImageController.generateBrickImage();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ParseException | IOException e) {
             e.printStackTrace();
         }
     }
