@@ -2,7 +2,7 @@
 
 Generates a brick based image.
 
-![India flag](images/output.png)
+![India flag](images/output2.png)
 
 ## Original file
 
