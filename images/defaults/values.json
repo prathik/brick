@@ -13,4 +13,19 @@
     "g": 0,
     "b": 0,
     "file": "black.png"
+}, {
+    "r": 0,
+    "g": 255,
+    "b": 0,
+    "file": "green.png"
+}, {
+    "r": 255,
+    "g": 255,
+    "b": 255,
+    "file": "white.png"
+}, {
+    "r": 253,
+    "g": 152,
+    "b": 64,
+    "file": "orange.png"
 }]
